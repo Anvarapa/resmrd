@@ -47,7 +47,6 @@ nav.active-nav .container .nav .logo {
 nav.active-nav .container .nav {
   min-height: 5vh;
 }
-nav .container .nav .nav-links a.current,
 nav .container .nav .nav-links a:hover {
   color: rgb(255, 174, 0);
 }
