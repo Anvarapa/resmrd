@@ -20,6 +20,12 @@ const navSlide = () => {
     burger.classList.toggle('toggle')
   });
 
+  // navLinks.forEach((link) =>{
+  //   link.addEventListener('click', ()=>{
+  //     nav.classList.toggle('nav-active')
+  //   })
+  // })
+
 window.addEventListener('scroll', fixNav)
 function fixNav(){
 if(window.scrollY > navBar.offsetHeight + 150){
