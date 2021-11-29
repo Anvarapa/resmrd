@@ -209,9 +209,17 @@ nav .container .nav .nav-links a:hover {
   cursor: pointer;
   transition: 0.5s;
 }
-.product_buuttons button:hover {
-  width: 140px;
-}
+.product_buuttons a{
+  max-width: 110px;
+  width: 100%;
+  }
+  
+  .product_buuttons button:hover{
+    max-width: 120px;
+  }
+  .product_buuttons a:hover{
+    max-width: 120px;
+  }
 .product_learn {
   background-color: rgb(66, 240, 214);
 }
@@ -230,6 +238,7 @@ nav .container .nav .nav-links a:hover {
   width: 100%;
   min-height: 120px;
   background-color: #7a7a7a;
+  padding: 20px 0;
 }
 .footer_container {
   width: 100%;
@@ -239,7 +248,7 @@ nav .container .nav .nav-links a:hover {
   padding-top: 30px;
 }
 .social_media {
-  max-width: 200px;
+  max-width: 150px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -264,10 +273,18 @@ nav .container .nav .nav-links a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  grid-gap: 10px;
+  overflow: hidden;
+  height: 100px;
 }
 .footer_contacts a {
   text-decoration: none;
   color: #fff;
+  transition: 0.5s;
+}
+.footer_contacts a:hover{
+border-bottom: rgb(250, 192, 31) 3px solid;
+color: rgb(250, 192, 31);
 }
 .contact_us {
   display: flex;

@@ -397,8 +397,15 @@ nav .container .nav .nav-links a:hover {
   transition: 0.5s;
   font-size: 12px;
 }
+.product_buuttons a{
+max-width: 110px;
+width: 100%;
+}
 
 .product_buuttons button:hover{
+  max-width: 120px;
+}
+.product_buuttons a:hover{
   max-width: 120px;
 }
 
@@ -658,7 +665,7 @@ nav .container .nav .nav-links a:hover {
   align-items: center;
 }
 .social_media{
-  max-width: 200px;
+  max-width: 150px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -678,15 +685,23 @@ nav .container .nav .nav-links a:hover {
 .media_img img{
   width: 100%;
 }
-.footer_contacts{
+.footer_contacts {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  grid-gap: 10px;
+  overflow: hidden;
+  height: 100px;
 }
-.footer_contacts a{
+.footer_contacts a {
   text-decoration: none;
   color: #fff;
+  transition: 0.5s;
+}
+.footer_contacts a:hover{
+border-bottom: rgb(250, 192, 31) 3px solid;
+color: rgb(250, 192, 31);
 }
 .contact_us{
   display: flex;
