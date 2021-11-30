@@ -1,41 +1,46 @@
-const navSlide = () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav-links");
-  const navLinks = document.querySelectorAll(".nav-links li");
-  const navBar = document.querySelector('nav')
+const openButton = document.querySelectorAll('#open');
+const modal_window_show = document.querySelector('.modal_window_show')
+const closeButton = document.querySelector('#close')
+const modalContainer = document.querySelector('.modal_container')
 
-  burger.addEventListener("click", () => {
-    //   TOGGLE NAV
-    nav.classList.toggle("nav-active");
+openButton.forEach((item)=>{
+item.addEventListener('click', ()=>{
+  modal_window_show.classList.add('modal_show');
+})
+});
+closeButton.addEventListener('click', ()=>{
+  modal_window_show.classList.remove('modal_show')
+})
 
-    // ANIMATE LINK
-    navLinks.forEach((link, index) => {
-        if (link.style.animation) {
-          link.style.animation = "";
-        } else {
-          link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-        }
-      });
-    //   BURGER ANIMATION
-    burger.classList.toggle('toggle')
-  });
+document.addEventListener('click', function(item){
+  if (item.target === modalContainer) {
+    modal_window_show.classList.remove('modal_show')
+  }
+})
 
-  // navLinks.forEach((link) =>{
-  //   link.addEventListener('click', ()=>{
-  //     nav.classList.toggle('nav-active')
-  //   })
-  // })
+function gotowhatsapp() {
+    
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var service = document.getElementById("service").value;
 
-window.addEventListener('scroll', fixNav)
-function fixNav(){
-if(window.scrollY > navBar.offsetHeight + 150){
-  navBar.classList.add('active-nav')
-}
-else{
-  navBar.classList.remove('active-nav')
-}
+    var url = "https://wa.me/996557899400?text=" 
+    + "Имя:  " + name + "%0a"
+    + "Телефон:  " + phone + "%0a"
+    + "Email:  " + email  + "%0a"
+    + "Имя товара:  " + service; 
+
+    window.open(url, '_blank').focus();
 }
 
-};
-navSlide();
-             
+function footerContact(){
+  var footerName = document.getElementById('footer_name').value;
+  var footerText = document.getElementById('footer_text').value;
+
+  var url = "https://wa.me/996557899400?text=" 
+    + "Имя:  " + footerName + "%0a"
+    + "Сообщения:  " + footerText + "%0a";
+
+    window.open(url, '_blank').focus();
+}

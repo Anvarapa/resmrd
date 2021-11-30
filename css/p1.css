@@ -93,6 +93,19 @@ nav .container .nav .nav-links a:hover {
   flex-direction: column;
   margin-top: 50px;
 }
+.product_learn{
+  border: none;
+  outline: none;
+  max-width: 110px;
+  width: 100%;
+  height: 35px;
+  color: #fff;
+  padding: 0 5px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 12px;
+}
 .name_picture_product {
   display: flex;
   max-width: 800px;
@@ -137,6 +150,7 @@ nav .container .nav .nav-links a:hover {
   max-width: 1000px;
   width: 100%;
   color: #1f4375;
+  margin-bottom: 20px;
 }
 .line_info_h1 {
   border-bottom: 2px solid #2385c2;
@@ -272,9 +286,7 @@ nav .container .nav .nav-links a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   grid-gap: 10px;
-  overflow: hidden;
   height: 100px;
 }
 .footer_contacts a {
@@ -282,20 +294,34 @@ nav .container .nav .nav-links a:hover {
   color: #fff;
   transition: 0.5s;
 }
-.footer_contacts a:hover{
-border-bottom: rgb(250, 192, 31) 3px solid;
-color: rgb(250, 192, 31);
+.footer_contacts_text{
+  font-weight: bolder;
+  font-size: 18px;
+}
+.footer_contacts a:hover {
+  color: rgb(250, 192, 31);
 }
 .contact_us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_form{
   display: flex;
   flex-direction: column;
   grid-gap: 5px;
 }
-.contact_us input,
-textarea {
-  border: none;
+.footer_form input{
   outline: none;
   padding-left: 5px;
+}
+.footer_form textarea{
+  outline: none;
+  padding-left: 5px;
+}
+.footer_form_f5 {
+  font-size: 16px;
+  color: #fff;
 }
 
 /* P2 */
@@ -331,6 +357,136 @@ textarea {
 }
 .p3_img_blog img{
   width: 100%;
+}
+/* contacts */
+.contacts_part {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 90;
+}
+.contacts_part a {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.contacts_part a:hover {
+  width: 65px;
+  height: 65px;
+  color: #fff;
+}
+.media_img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone {
+  background-color: rgba(28, 133, 186, 0.51);
+  margin-bottom: 20px;
+}
+.whatsap {
+  background-color: rgba(21, 171, 68, 0.401);
+}
+
+/* MODAL WINDOW */
+.modal_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.313);
+}
+.modal_items {
+  background-color: #fff;
+  padding: 30px 50px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+.modal_window_show{
+  display: none;
+}
+.modal_show{
+  display: block;
+}
+.close_modal{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border-radius: 5px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  background-color:#fff;
+}
+.modal_show_img{
+  max-width: 20px;
+}
+.modal_show_img img{
+  width: 100%;
+}
+.modal_form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-gap: 15px;
+}
+.modal_h1{
+  margin: 20px 20px;
+  text-align: center;
+}
+.modal_form input{
+  max-width: 500px;
+  width: 100%;
+  height: 40px;
+  padding-left: 5px;
+}
+.modal_form select{
+  max-width: 500px;
+  width: 100%;
+  height: 40px;
+  padding-left: 5px;
+}
+.modal_submit{
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: rgb(119, 214, 119);
+  color: #fff;
+  border-radius: 3px;
+}
+.modal_p{
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 20px;
+}
+@media screen and (max-width: 642px) {
+  .modal_items {
+    padding: 30px 10px;
+  }
 }
 /* -------------------------------------------------------------------------------------- */
 /* АДАПТИВКА */
@@ -381,5 +537,35 @@ textarea {
   .name_picture_h1 {
     text-align: center;
     margin-bottom: 10px;
+  }
+  
+  /* contact */
+  .contacts_part {
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 90;
+  }
+  .contacts_part a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .contacts_part a:hover {
+    width: 65px;
+    height: 65px;
+    color: #fff;
   }
 }
