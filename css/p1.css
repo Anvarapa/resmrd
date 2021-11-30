@@ -269,7 +269,23 @@ nav .container .nav .nav-links a:hover {
   overflow: hidden;
   grid-gap: 10px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
+
+.location_social_media{
+  max-width: 300px;
+  width: 100%;
+  grid-gap: 10px;
+}
+.location_social_media_a{
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+.location_social_media_a:hover{
+  color: rgb(250, 192, 31);
+}
+
 .media_img {
   max-width: 40px;
   width: 100%;
