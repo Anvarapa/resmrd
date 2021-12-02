@@ -506,6 +506,15 @@ nav .container .nav .nav-links a:hover {
 }
 /* -------------------------------------------------------------------------------------- */
 /* АДАПТИВКА */
+@media screen and (max-width: 768px) {
+  .location_social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+   }
+}
 @media screen and (max-width: 650px) {
   .product {
     max-width: 240px;
