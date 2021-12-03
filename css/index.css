@@ -227,6 +227,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(90, 156, 250);
+  height: 120px;
+  padding-bottom: 5px;
 }
 .description_p {
   text-align: center;
@@ -281,7 +283,7 @@ body {
   border-radius: 5px;
 }
 /* BIG PRODUCT */
-.big_products {
+/* .big_products {
   margin-top: 50px;
 }
 .big_products_container {
@@ -363,7 +365,7 @@ body {
 }
 .oreder {
   background-color: rgb(255, 174, 0);
-}
+} */
 
 /* Advantage */
 .advantage {

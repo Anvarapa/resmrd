@@ -197,6 +197,8 @@ nav .container .nav .nav-links a:hover {
   justify-content: center;
   align-items: center;
   background-color: rgb(90, 156, 250);
+  height: 120px;
+ padding: 5px;
 }
 .description_p {
   text-align: center;
